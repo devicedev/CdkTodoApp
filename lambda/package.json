@@ -1,0 +1,27 @@
+{
+    "name": "resources",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@hapi/joi": "^16.1.7",
+        "@types/node": "^12.7.12",
+        "module-alias": "^2.2.2",
+        "uuid": "^3.3.3"
+    },
+    "_moduleAliases": {
+        "@exceptions": "src/utils/exceptions.js",
+        "@usecases": "src/usecases",
+        "@user": "src/entities/user",
+        "@post": "src/entities/post",
+        "@repository": "src/repository",
+        "@utils": "src/utils",
+        "@logger": "src/utils/logger.js"
+    }
+}
