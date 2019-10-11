@@ -67,29 +67,30 @@ export class CdkTodoAppLambdaStack extends cdk.Stack {
             proxy: false
         });
 
-        const todoResource = api.root.addResource("todo");
+        const todoResources = api.root.addResource("todos");
 
         const createTodo = new apigateway.LambdaIntegration(createHandler);
 
-        todoResource.addMethod("POST", createTodo);
+        todoResources.addMethod("POST", createTodo);
 
         const updateTodo = new apigateway.LambdaIntegration(updateHandler);
 
-        todoResource.addMethod("PUT", updateTodo);
+        todoResources.addMethod("PUT", updateTodo);
 
         const deleteTodo = new apigateway.LambdaIntegration(deleteHandler);
 
-        todoResource.addMethod("DELETE", deleteTodo);
-
-        const getTodo = new apigateway.LambdaIntegration(getHandler);
-
-        todoResource.addMethod("GET", getTodo);
-
-        const todoResources = api.root.addResource("todos");
+        todoResources.addMethod("DELETE", deleteTodo);
 
         const getAllTodos = new apigateway.LambdaIntegration(getAllHandler);
 
         todoResources.addMethod("GET", getAllTodos);
+
+        const getTodo = new apigateway.LambdaIntegration(getHandler);
+
+        const todoResource = todoResources.addResource("{id}");
+
+        todoResource.addMethod("GET", getTodo);
+
 
         const graphQLApi = new appsync.CfnGraphQLApi(this, "GraphQLApi", {
             name: "todo-data-gateway-graphqlapi-dev",
