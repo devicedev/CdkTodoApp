@@ -1,0 +1,1 @@
+module.exports = ({retrieveAllTodos}) => async () => await retrieveAllTodos();
