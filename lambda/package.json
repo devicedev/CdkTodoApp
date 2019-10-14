@@ -4,14 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test:unit": "clear && export LOG=NO_LOG && jest",
+        "test:unit-watch": "clear && export LOG=NO_LOG && jest --watchAll"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "@hapi/joi": "^16.1.7",
+        "@types/faker": "^4.1.6",
         "@types/node": "^12.7.12",
+        "bcryptjs": "^2.4.3",
         "module-alias": "^2.2.2",
         "uuid": "^3.3.3"
     },
@@ -23,5 +26,8 @@
         "@repository": "src/repository",
         "@utils": "src/utils",
         "@logger": "src/utils/logger.js"
+    },
+    "devDependencies": {
+        "faker": "^4.1.0"
     }
 }

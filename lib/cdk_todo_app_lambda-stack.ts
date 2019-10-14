@@ -93,8 +93,16 @@ export class CdkTodoAppLambdaStack extends cdk.Stack {
 
 
         const graphQLApi = new appsync.CfnGraphQLApi(this, "GraphQLApi", {
-            name: "todo-data-gateway-graphqlapi-dev",
+            name: `${this.stackName}-data-gateway-graphqlapi-dev`,
             authenticationType: "API_KEY"
+        });
+        const dataSource = new appsync.CfnDataSource(this, "DataSource", {
+            name: `${this.stackName}_data_gateway_datasource_dev`,
+            apiId: graphQLApi.attrApiId,
+            lambdaConfig:{
+                lambdaFunctionArn: getAllHandler.functionArn
+            } ,
+            type:"AWS_LAMBDA",
         });
         const graphQLSchema = new appsync.CfnGraphQLSchema(
             this,

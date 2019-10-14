@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="01db3c5e-5940-4cf2-aec8-b8ee154122eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/cdk_todo_app_lambda-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cdk_todo_app_lambda-stack.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +31,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/utils" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lambda/test" />
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/lambda/src/handlers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/utils" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -64,7 +71,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570708571036</updated>
-      <workItem from="1570708572178" duration="15124000" />
+      <workItem from="1570708572178" duration="17154000" />
+      <workItem from="1571031680572" duration="6155000" />
+      <workItem from="1571046038016" duration="34000" />
     </task>
     <servers />
   </component>
@@ -76,7 +85,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
